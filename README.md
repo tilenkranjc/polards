@@ -1,1 +1,4 @@
 # polards
+
+1. Analyse images with CellProfiler to find coordinates of nuclei and Golgi fragments. You can use primary object detection for this, but you need to link golgi fragments with the corresponding nuclei. An example of both cellprofiler output files with coordinates - one for nuclei and one for Golgi.
+2. Copy the two files with coordinates into the repository folder and change the filename pointers in sample_analysis.R (lines 10 and 13) to coordinate files - the variables are "eres" and "nuclei". Currently the statistical test in the script compares all conditions to the condition called "neg". Change this as well if needed (line 49 in the script).
